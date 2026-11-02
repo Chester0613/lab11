@@ -1,0 +1,53 @@
+
+Lab 11 - CoRe Data Analyzer
+Test Cases
+
+Test 1: Invalid observation count
+Input: 0, then 2
+Expected Result: The program rejects 0 and accepts 2.
+Observed Result: The program rejects 0 and allows 2 observations.
+
+Test 2: Display two observations
+Input:
+151, FL, Gadsden County, 22510, 15582, 6811, 69.58
+46, PA, Montour County, 8023, 3364, 4574, 42.38
+Menu option: 1
+Expected Result: Two aligned rows with the correct IDs and two decimal places.
+Observed Result: Both records are displayed correctly.
+Observations displayed: 2
+
+Test 3: Display data again
+Input: Menu option 1 a second time
+Expected Result: The same two records appear without asking for new data.
+Observed Result: The same records appear again.
+
+Test 4: Negative vote count
+Input: -5, then 22510
+Expected Result: The program rejects -5 and asks for a valid number.
+Observed Result: The program rejects -5 and accepts 22510.
+
+Test 5: Invalid Democratic share
+Input: 101, then 69.58
+Expected Result: The program rejects 101 because it is greater than 100.
+Observed Result: The program rejects 101 and accepts 69.58.
+
+Test 6: Text instead of a number
+Input: abc, then 151
+Expected Result: The program rejects text and asks for a whole number.
+Observed Result: The program accepts 151 after rejecting abc.
+
+Test 7: Invalid menu option
+Input: 9
+Expected Result: The program displays "Invalid option." and returns to the menu.
+Observed Result: The program displays the message and keeps the records.
+
+Test 8: Exit application
+Input: 11
+Expected Result: The program displays "Session ended." and closes.
+Observed Result: The program ends correctly.
+
+Additional Test: One observation
+Input: 1 observation, then menu option 1
+Expected Result: Only one row is displayed, not 100.
+Observed Result: One observation is displayed.
+Observations displayed: 1
